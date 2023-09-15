@@ -17,7 +17,7 @@ h1 {
 
 
 .upload-container {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .upload-button {
@@ -37,7 +37,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; 
+  gap: 25px; 
 }
 
 
@@ -75,8 +75,48 @@ h1 {
 
 
 .selected-image {
-  margin-top: 20px;
+  margin: 15px;
   max-width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the selected image */
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+
 }
+
+.selected-image img {
+  height: 400px;
+  width: 500px;
+  object-fit: contain;
+}
+
+h1{
+  background-color: violet;
+  padding: 10px;
+  color: black;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.image-thumbnail:hover::before {
+  content: 'Click to view';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image-thumbnail:hover::before {
+  opacity: 1;
+}
+
+
+
+
+
+

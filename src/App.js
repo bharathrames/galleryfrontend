@@ -5,7 +5,7 @@ function App() {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [file, setFile] = useState(null);
-  const [uploadError, setUploadError] = useState(null); // State for upload error message
+  const [uploadError, setUploadError] = useState(null); 
 
   useEffect(() => {
     
@@ -73,7 +73,7 @@ function App() {
         <button onClick={handleImageUpload} className="upload-button">
           Upload
         </button>
-        {uploadError && <p className="upload-error">{uploadError}</p>} {/* Display error message */}
+        {uploadError && <p className="upload-error">{uploadError}</p>} 
       </div>
       <div className="image-list">
         {images.map((image) => (
