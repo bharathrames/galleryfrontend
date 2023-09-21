@@ -114,7 +114,9 @@ h1{
 .image-thumbnail:hover::before {
   opacity: 1;
 }
-
+.upload-error{
+color:crimson;
+}
 
 
 
